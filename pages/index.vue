@@ -1,3 +1,3 @@
 <template>
-<div>hello world</div>
+<div>hello world牛逼尚硅谷</div>
 </template>
