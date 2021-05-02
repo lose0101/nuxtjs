@@ -1,3 +1,3 @@
 <template>
-<div>hello world，尚硅谷真牛逼6666</div>
+<div>hello world，尚硅6</div>
 </template>
