@@ -4,13 +4,13 @@
 {{msg}}
 <el-input v-model="msg"></el-input>
 {{number}}
-<el-slider v-model="number"></el-slider>
+
 </div>
 </template>
 <script>
 export default{
     data(){
-        return{
+        return {
             msg:'hello world',
             number:5,
         }
