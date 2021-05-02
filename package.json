@@ -10,8 +10,8 @@
     "start": "nuxt start"
   },
   "dependencies": {
-    "nuxt": "^2.15.4",
-    "element-ui":"^2.15.1"
+    "nuxt": "^2.0.0",
+    "element-ui": "^2.4.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
