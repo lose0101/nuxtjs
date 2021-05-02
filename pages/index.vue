@@ -1,5 +1,5 @@
 <template>
-<div>hello world，尚硅6，刚刚
+<div>尚硅66
 <el-button>ok</el-button>
 {{msg}}
 <el-input v-model="msg" placeholder="请输入内容"></el-input>
