@@ -4,7 +4,9 @@
 <script>
 export default{
     data:{
-        msg:'hello'
+        return {
+            msg:'hello'
+        }
     }
 }
 </script>
