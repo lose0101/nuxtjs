@@ -33,5 +33,6 @@ export default{
         c(index){
              this.index=index
         }
+    }
 }
 </script>
