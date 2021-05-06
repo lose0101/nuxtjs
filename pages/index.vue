@@ -1,7 +1,7 @@
 <template>
 <div>
 <div>
-<button v-if="x in list">{{x}}</button>
+<button v-for="x in list">{{x}}</button>
 </div>
 </div>
 </template>
