@@ -1,3 +1,3 @@
 <template>
-<video src="肥肥兔">
+<video src="肥肥兔" controls autoplay>
 </template>
