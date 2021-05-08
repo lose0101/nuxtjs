@@ -1,3 +1,3 @@
 <template>
-你好世界
+<div>你好世界</div>
 </template>
