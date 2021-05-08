@@ -1,6 +1,8 @@
 <template>
+<div>
 {{msg}}
 <button @click="点击事件">ok</button>
+</div>
 </template>
 <script>
 export default{
