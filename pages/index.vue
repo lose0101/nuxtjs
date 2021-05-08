@@ -1,38 +1,13 @@
 <template>
 <div>
-<div>
-<el-button v-for="(x,index) in list" @click="c(index)">{{x}}</el-button>
-</div>
-<el-row v-if="index%2===0">
-<el-col :span="6" style="background:red">
-a
-</el-col>
-<el-col :span="18" style="background:green">
-b
-</el-col>
-</el-row>
-<el-row v-else>
-<el-col :span="18" style="background:green">
-b
-</el-col>
-<el-col :span="6" style="background:red">
-a
-</el-col>
-</el-row>
+<h1>vue文件描述</h1>
+<h3>0.vue ---- 在浏览器上显示 你好世界</h3>
+<h3>1.vue ---- 改变 你好世界 的颜色</h3>
+<h3>2.vue ---- 在浏览器上显示一个ok按钮</h3>
+<h3>3.vue ---- 点击ok按钮,弹出窗口并显示你好世界</h3>
+<h3>4.vue ---- 点击ok按钮,把你好世界改为你好中国</h3>
+<h3>5.vue ---- 在浏览器上显示一张图片</h3>
+<h3>6.vue ---- 在浏览器上显示一个视频</h3>
+<h3>7.vue ---- 在浏览器上显示一句话今天天气真好和一个视频，要求今天天气真好和视频为上下结构显示</h3>
 </div>
 </template>
-<script>
-export default{
-    data(){
-        return {
-          index:0,
-          list:[1,2,3,4]
-        }
-    },
-    methods:{
-        c(index){
-             this.index=index
-        }
-    }
-}
-</script>
