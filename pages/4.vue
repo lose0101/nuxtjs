@@ -1,7 +1,7 @@
 <template>
 <div>
 {{msg}}
-<button @click="点击事件">ok</button>
+<button @click="f">ok</button>
 </div>
 </template>
 <script>
@@ -12,7 +12,7 @@ export default{
     }
   },
   methods:{
-    点击事件(){
+    f(){
       this.msg='你好中国'
     }
   }
