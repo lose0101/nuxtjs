@@ -1,6 +1,9 @@
-# PAGES
-
-This directory contains your Application Views and Routes.
-The framework reads all the `*.vue` files inside this directory and creates the router of your application.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/routing).
+# vue文件描述
+0.vue ---- 在浏览器上显示 `你好世界`<br>
+1.vue ---- 改变 `你好世界` 的颜色<br>
+2.vue ---- 在浏览器上显示一个`ok`按钮<br>
+3.vue ---- 点击`ok`按钮,弹出`窗口`并显示`你好世界`<br>
+4.vue ---- 点击`ok`按钮,把`你好世界`改为`你好中国`<br> 
+5.vue ---- 在浏览器上显示一张`图片`<br>
+6.vue ---- 在浏览器上显示一个`视频`<br>
+7.vue ---- 在浏览器上显示一句话`今天天气真好`和一个`视频`，要求`今天天气真好`和`视频`为上下结构显示<br>
