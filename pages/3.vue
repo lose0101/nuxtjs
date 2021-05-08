@@ -1,10 +1,10 @@
 <template>
-<button @click="点击事件">ok</button>
+<button @click="f">ok</button>
 </template>
 <script>
 export default{
   methods:{
-    点击事件(){
+    f(){
       alert('你好世界')
     }
   }
