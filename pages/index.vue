@@ -11,3 +11,6 @@
 <h4 to="/7.vue">7.vue ---- 在浏览器上显示一句话今天天气真好和一个视频，要求今天天气真好和视频为上下结构显示</h4>
 </div>
 </template>
+<style scoped>
+h4{font-height:150%;}
+</style>
