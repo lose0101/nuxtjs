@@ -22,7 +22,7 @@
 </div>
 
 <h3>--------到这就是学完了，不明白的可以加我微信问哦～--------</h3>
-<el-row>
+<el-row style="text-align:center;">
 <img style="width:80%;" src="卷毛猪.png">
 </el-row>
 </div>
