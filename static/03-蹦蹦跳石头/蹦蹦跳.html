@@ -1,0 +1,113 @@
+<meta charset="UTF-8">
+<div class="game" onclick="跳()">
+<img src="蹦蹦.gif" class="小人 伦廓" id="小人">
+<img src="石头.png" class="石头 伦廓" id="石头">
+<div id="工具栏" style="position:absolute;width:100%;">
+<button onclick="切换伦廓()">切换物体伦廓</button>
+<button onclick="重开游戏()">重开游戏</button>
+
+<span style="position:absolute;right:10px;">得分:<span id="得分">0</span></span>
+</div>
+<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction: column;">点击跳跃
+<div>倒计时:<span id="倒计时元素">0</span>秒</div>
+</div>
+</div>
+<style>
+.game{width:500px;height:500px;border:1px solid #000;position:relative;overflow:hidden;}
+.伦廓{border:1px solid red;}
+.小人{width:100px;position:absolute;bottom:0;z-index:1;}
+.跳{animation:跳 .8s linear;}
+.石头{width:50px;height:50px;position:absolute;right:0;bottom:0;}
+.滑行{animation:滑行 1s linear infinite;}
+@keyframes 滑行{
+    0%{right:0;}
+    100%{right:100%;}
+}
+@keyframes 跳{
+    0%{bottom:0;}
+    50%{bottom:150px;}
+    70%{bottom:150px;}
+    100%{bottom:0;}
+}
+</style>
+<script>
+let 小人=document.getElementById('小人')
+let 石头=document.getElementById('石头')
+let 得分=document.getElementById('得分')
+let 倒计时元素=document.getElementById('倒计时元素')
+let 是否有伦廓=true
+let 总分=0
+let 倒计时=3
+let 游戏中=false
+
+function sleep(ms){
+    return new Promise(resolve=>{
+        setTimeout(resolve,ms)
+    })
+}
+
+async function 重开游戏(){
+    if(游戏中)return
+    游戏中=true
+    倒计时=3
+    总分=0
+    得分.innerText=总分
+    石头.style.left=''
+    while(倒计时>=0){
+        倒计时元素.innerText=倒计时
+        倒计时--
+        await sleep(300)
+    }
+    石头.classList.add('滑行')
+    检测碰撞()
+}
+
+重开游戏()
+
+function 跳(){
+    if(小人.classList.contains('跳'))return
+    小人.classList.add('跳')
+    setTimeout(()=>{
+        小人.classList.remove('跳')
+    },800)
+}
+function 停止冒泡(e){
+    console.log(e)
+}
+document.getElementById('工具栏').addEventListener('click',(e)=>{
+    //console.log(e)
+    e.stopPropagation()
+})
+
+function 切换伦廓(){
+    //console.log(是否有伦廓)
+    if(是否有伦廓){
+        是否有伦廓=false
+        小人.classList.remove('伦廓')
+        石头.classList.remove('伦廓')
+    }else{
+        是否有伦廓=true
+        小人.classList.add('伦廓')
+        石头.classList.add('伦廓')
+    }
+}
+
+function 检测碰撞(){
+    let 检查间隔=setInterval(()=>{
+    let 小人底部=window.getComputedStyle(小人).bottom
+    let 石头左边=window.getComputedStyle(石头).left
+    if(parseInt(石头左边)<=100&&parseInt(小人底部)<=50){
+        alert('你失误了')
+        游戏中=false
+        石头.classList.remove('滑行')
+        石头.style.left=石头左边
+        clearInterval(检查间隔)
+    }
+    if(parseInt(石头左边)<=100&&parseInt(小人底部)>=50){
+        总分+=10
+        得分.innerText=总分
+    }
+    console.log(小人底部,石头左边)
+    },30)
+}
+</script>
