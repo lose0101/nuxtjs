@@ -6,7 +6,7 @@
 {{f?'🤣🥰'.repeat(10):'😎'}}
 <img v-if="f" src="嗷呜.gif">
 </h1>
-<div v-if="w" style="color:red">等待10秒有奇迹😂</div>
+<div v-if="w" style="color:red">{{f?'我老婆聪明得很，才不傻😌':'等待10秒有奇迹😂'}}</div>
 <div style="text-align:center;" class="run">
 <span v-for="(x,index) in arr" :key="index">❤️</span>
 </div>
