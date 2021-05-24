@@ -24,7 +24,7 @@ export default{
 </script>
 <style>
 .run{
-animation:run all .5s infinite;
+animation:run .5s infinite;
 }
 
 @keyframes run{
