@@ -2,6 +2,7 @@
 <div>
 <h1>
 娜娜🐷老婆，老公超级爱你😘
+<span>老婆{{arr.length%2===0?'是':'不是'}}傻子😎
 </h1>
 <div style="text-align:center;" class="run">
 <span v-for="(x,index) in arr" :key="index">❤️</span>
@@ -23,7 +24,7 @@ export default{
             if(s<=0){
                 clearInterval(i)
             }
-        },300)
+        },1000)
     }
 }
 </script>
