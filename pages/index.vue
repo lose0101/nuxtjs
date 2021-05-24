@@ -5,7 +5,7 @@
 <span>老婆{{arr.length%2===0?'是':'不是'}}傻子
 {{f?'🤣🥰'.repeat(10):'😎'}}
 </h1>
-<div v-if="f" style="color:red">等待10秒有奇迹😂</div>
+<div v-if="w" style="color:red">等待10秒有奇迹😂</div>
 <div style="text-align:center;" class="run">
 <span v-for="(x,index) in arr" :key="index">❤️</span>
 </div>
@@ -17,6 +17,7 @@ export default{
         return{
             arr:[],
             f:false,
+            w:false,
         }
     },
     mounted(){
@@ -30,6 +31,7 @@ export default{
                     this.arr.push(1)
                     this.f=true
                 },10000)
+                this.w=true
             }
         },1000)
     }
