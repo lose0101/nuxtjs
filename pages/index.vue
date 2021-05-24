@@ -23,6 +23,9 @@ export default{
             s--
             if(s<=0){
                 clearInterval(i)
+                setTimeout(()=>{
+                    this.arr.push(1)
+                },10000)
             }
         },1000)
     }
