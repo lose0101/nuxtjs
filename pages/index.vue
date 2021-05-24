@@ -16,14 +16,14 @@ export default{
         }
     },
     mounted(){
-        let s=520
+        let s=10
         let i=setInterval(()=>{
             this.arr.push(1)
             s--
             if(s<=0){
                 clearInterval(i)
             }
-        },30)
+        },300)
     }
 }
 </script>
