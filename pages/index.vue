@@ -34,6 +34,6 @@ animation:run .5s infinite;
 
 @keyframes run{
     0%{font-size:50px;}
-    100%{font-size:90px;}
+    100%{font-size:60px;}
 }
 </style>
