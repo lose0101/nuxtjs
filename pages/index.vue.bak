@@ -1,19 +1,6 @@
 <template>
-<div>尚硅66，牛逼啊！66
-<el-button>ok</el-button>
-{{msg}}
-<el-input v-model="msg" placeholder="请输入内容"></el-input>
-{{number}}
-<el-slider v-model="number"></el-slider>
-</div>
+<h1>
+娜娜🐷老婆，老公超级爱你😘
+</h1>
+<div style="font-size:50px;text-align:center;">❤️</div>
 </template>
-<script>
-export default{
-    data(){
-        return {
-            msg:'hello world',
-            number:5,
-        }
-    }
-}
-</script>
