@@ -4,6 +4,7 @@
 娜娜🐷老婆，老公超级爱你😘
 <span>老婆{{arr.length%2===0?'是':'不是'}}傻子
 {{f?'🤣🥰'.repeat(10):'😎'}}
+<img v-if="f" src="嗷呜.gif">
 </h1>
 <div v-if="w" style="color:red">等待10秒有奇迹😂</div>
 <div style="text-align:center;" class="run">
