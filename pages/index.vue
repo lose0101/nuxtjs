@@ -19,7 +19,7 @@ export default{
         },300)
     }
 }
-</scipt>
+</script>
 <style>
 .run{
 animation:run all .5s infinite;
