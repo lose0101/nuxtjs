@@ -3,7 +3,9 @@
 <h1>
 娜娜🐷老婆，老公超级爱你😘
 </h1>
-<div v-for="(x,index) in arr" :key="index"  style="text-align:center;" class="run">❤️</div>
+<div style="text-align:center;" class="run">
+<span v-for="(x,index) in arr" :key="index">❤️</span>
+</div>
 </div>
 </template>
 <script>
